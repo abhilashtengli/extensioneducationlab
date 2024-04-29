@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFrombottom {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-left-to-right {
+    animation: slideFromLeft 0.7s ease-out forwards;
+}
+
+.animate-top-to-bottom {
+    animation: slideFromTop 0.7s ease-out forwards;
+}
+
+.animate-bottom-to-top50 {
+    animation: slideFrombottom 0.7s ease-out forwards;
+}
+
+.animate-bottom-to-top {
+    animation: animate-bottom-to-top 0.5s ease-in-out;
+    /* Animation duration and easing */
+}
+
+@keyframes animate-bottom-to-top {
+    from {
+        transform: translateY(10%);
+        /* Start off-screen from the bottom */
+        opacity: 0;
+        /* Start invisible */
+    }
+
+    to {
+        transform: translateY(0);
+        /* End in original position */
+        opacity: 1;
+        /* End fully visible */
+    }
 }
