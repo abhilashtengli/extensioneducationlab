@@ -30,7 +30,7 @@
 
 @keyframes slideFrombottom {
     0% {
-        transform: translateY(50%);
+        transform: translateY(30%);
         opacity: 0;
     }
 
@@ -41,15 +41,15 @@
 }
 
 .animate-left-to-right {
-    animation: slideFromLeft 0.7s ease-out forwards;
+    animation: slideFromLeft 0.5s ease-out forwards;
 }
 
 .animate-top-to-bottom {
-    animation: slideFromTop 0.7s ease-out forwards;
+    animation: slideFromTop 0.5s ease-out forwards;
 }
 
 .animate-bottom-to-top50 {
-    animation: slideFrombottom 0.7s ease-out forwards;
+    animation: slideFrombottom 0.4s ease-out forwards;
 }
 
 .animate-bottom-to-top {

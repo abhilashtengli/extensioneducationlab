@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../Header";
+import ResourceBody from "./ResourceBody";
+import Footer from "../Footer/Footer";
 
 const Resource = () => {
   useEffect(() => {
@@ -8,6 +10,9 @@ const Resource = () => {
   return (
     <>
       <Header />
+      <ResourceBody/>
+      <Footer/>
+
     </>
   );
 };

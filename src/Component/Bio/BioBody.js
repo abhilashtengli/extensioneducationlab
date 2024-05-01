@@ -5,13 +5,13 @@ const BioBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-44 border-red-500 h-80">
+        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80">
           <h1 className="text-4xl animate-bottom-to-top">About me</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Cultivating knowledge and community through agricultural extension
           </p>
         </div>
-        <div className="bg-teal-50 py-12 pl-44 pr-32 border-t border-teal-100">
+        <div className="bg-teal-50 py-12 lg:pl-44 lg:px-0 px-5 lg:pr-32 border-t border-teal-100">
           <DelayedComponent state="animate-bottom-to-top">
             <p className="  border-red-500 py-2 animate-bottom-to-top">
               <b>Mahesh B. Tengli </b> holds the position of Assistant Professor

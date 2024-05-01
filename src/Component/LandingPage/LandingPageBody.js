@@ -1,56 +1,37 @@
-import React, { useEffect, useState } from "react";
 import mbtengli from "../../Images/mbTengli.jpg";
 import { Link } from "react-router-dom";
-import banner1 from "../../Images/banner1.jpg";
+// import bannerhd from "../../Images/banner1-transformed.jpeg";
 import DelayedComponent from "../DelayedComponent/DelayedComponent";
+import { bannerImages } from "../Utils/Constants";
+import ImageSlider from "../Functionalities/ImageSlider";
 const LandingPageBody = () => {
-  const [currentTagIndex, setCurrentTagIndex] = useState(0);
-  const words = ["Support", "Enhance", "Empower"];
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTagIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   return (
     <>
       <div className="relative">
-        <div className="bg-black  w-full h-screen bg-opacity-75">
-          <img className="w-screen h-screen" alt="banner" src={banner1} />
-        </div>
-        <div className="absolute inset-0 text-white text-5xl">
-          <div className=" border-red-500  h-fit  mt-44 ml-24 w-[35%] ">
-            <h1 className=" tracking-wider animate-bottom-to-top  font-semibold bg-black bg-opacity-20 rounded-lg p-2">
-              Extension Education Lab to
-            </h1>
-            <h1
-              key={currentTagIndex}
-              className={` h-fit border-red-500 w-fit tracking-wider ml-44 -mt-14 font-bold animate-bottom-to-top`}
-            >
-              {words[currentTagIndex]}
-            </h1>
-          </div>
-
-          <p className="text-black  animate-bottom-to-top text-lg rounded-lg border border-rgray-100 w-1/2 ml-24 mt-8 bg-teal-50 p-2 bg-opacity-50">
-            Welcome to the Extension Education Lab (eeL), your virtual gateway
-            to the world of extension education. At eeL, we provide a dynamic
-            platform tailored for extension students and researchers, offering
-            comprehensive resources to delve into the realms of extension
-            education courses and research. Whether you're embarking on your
-            academic journey or delving into groundbreaking research endeavors,
-            eeL is your compass, guiding you through the intricate landscape of
-            extension education with expertise and innovation. Join us in
-            unlocking the boundless opportunities that await in the vibrant
-            domain of extension education.
-          </p>
+        <div className="">
+          <ImageSlider images={bannerImages} interval={2000} />
         </div>
       </div>
-      <div className=" border-red-500 flex justify-center py-20 bg-teal-50">
+      <div className="bg-teal-50 12 lg:pl-44 lg:pr-32 pt-5 px-1 lg:px-0 lg:pt-20">
+        <DelayedComponent state="animate-bottom-to-top">
+          <p className="text-black  animate-bottom-to-top text-lg rounded-lg lg:text-center bg-teal-50 p-2 ">
+            Welcome to the{" "}
+            <b className="text-green-900"> Extension Edu Lab (eLe)</b> , your
+            virtual gateway to the world of extension education. At eeL, we
+            provide a dynamic platform tailored for extension students and
+            researchers, offering comprehensive resources to delve into the
+            realms of extension education courses and research. Whether you're
+            embarking on your academic journey or delving into groundbreaking
+            research endeavors, eeL is your compass, guiding you through the
+            intricate landscape of extension education with expertise and
+            innovation. Join us in unlocking the boundless opportunities that
+            await in the vibrant domain of extension education.
+          </p>
+        </DelayedComponent>
+      </div>
+      <div className=" border-red-500 lg:px-0 px-5 flex flex-col-reverse items-center lg:flex-row lg:justify-center py-5 lg:py-20 bg-teal-50">
         <DelayedComponent state="animate-left-to-right">
-          <div className=" border border-teal-600 w-96 p-3 flex flex-col rounded-lg space-y-6  bg-white ">
+          <div className=" border  lg:border-teal-600 lg:w-96 p-3 flex flex-col lg:mt-0 mt-2 lg:rounded-lg space-y-6  bg-white ">
             <p className="animate-bottom-to-top ">
               <b>Mahesh B. Tengli </b> holds the position of Assistant Professor
               of Agricultural Extension at the School of Social Sciences,
@@ -58,8 +39,14 @@ const LandingPageBody = () => {
               Barapani. Having joined the esteemed Central Agricultural
               University, Imphal in December 2019, Mahesh brings a wealth of
               academic experience to his role.
+              <Link
+                to="/bio"
+                className="text-blue-700 ml-2 animate-bottom-to-top md:hidden font-semibold"
+              >
+                more..
+              </Link>
             </p>
-            <p className="animate-bottom-to-top ">
+            <p className="animate-bottom-to-top hidden md:block">
               Mahesh completed his Bachelor's degree in Agriculture at the
               College of Agriculture, University of Agricultural Sciences,
               Raichur, Karnataka, followed by his M.Sc. in Agricultural
@@ -70,7 +57,7 @@ const LandingPageBody = () => {
               his academic journey
               <Link
                 to="/bio"
-                className="text-blue-500 ml-2 animate-bottom-to-top  font-semibold"
+                className="text-blue-700 ml-2 animate-bottom-to-top  hover:text-blue-400  font-semibold"
               >
                 more..
               </Link>
@@ -86,10 +73,10 @@ const LandingPageBody = () => {
           </div>
         </DelayedComponent>
         <DelayedComponent state="animate-bottom-to-top50 ">
-          <div className="border ml-2 border-slate-200 rounded-lg shadow-lg">
+          <div className="border lg:ml-2 border-slate-200 rounded-lg shadow-lg">
             <img
               alt="pic"
-              className=" animate-bottom-to-top w-96 rounded-lg"
+              className=" animate-bottom-to-top w-96 lg:h-full h-[27rem] rounded-lg"
               src={mbtengli}
             />
           </div>
