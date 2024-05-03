@@ -8,11 +8,10 @@ const ContactBody = () => {
       <div className="">
         <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80">
           <h1 className="text-4xl animate-bottom-to-top">
-            Contact Mahesh B Tengli.
+            Contact
           </h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
-            Please use this form to contact me anything else you think I'd be
-            interested in.
+            Please use this form to contact me.
           </p>
         </div>
         <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32 border-t border-teal-100 flex justify-center items-center ">

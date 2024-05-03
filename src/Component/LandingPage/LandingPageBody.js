@@ -1,6 +1,5 @@
 import mbtengli from "../../Images/mbTengli.jpg";
 import { Link } from "react-router-dom";
-// import bannerhd from "../../Images/banner1-transformed.jpeg";
 import DelayedComponent from "../DelayedComponent/DelayedComponent";
 import { bannerImages } from "../Utils/Constants";
 import ImageSlider from "../Functionalities/ImageSlider";
@@ -14,15 +13,15 @@ const LandingPageBody = () => {
       </div>
       <div className="bg-teal-50 12 lg:pl-44 lg:pr-32 pt-5 px-1 lg:px-0 lg:pt-20">
         <DelayedComponent state="animate-bottom-to-top">
-          <p className="text-black  animate-bottom-to-top text-lg rounded-lg lg:text-center bg-teal-50 p-2 ">
+          <p className="text-black  animate-bottom-to-top text-lg rounded-lgy lg:text-center bg-teal-50 p-2 ">
             Welcome to the{" "}
             <b className="text-green-900"> Extension Edu Lab (eLe)</b> , your
-            virtual gateway to the world of extension education. At eeL, we
+            virtual gateway to the world of extension education. At eLe, we
             provide a dynamic platform tailored for extension students and
             researchers, offering comprehensive resources to delve into the
             realms of extension education courses and research. Whether you're
             embarking on your academic journey or delving into groundbreaking
-            research endeavors, eeL is your compass, guiding you through the
+            research endeavors, eLe is your compass, guiding you through the
             intricate landscape of extension education with expertise and
             innovation. Join us in unlocking the boundless opportunities that
             await in the vibrant domain of extension education.

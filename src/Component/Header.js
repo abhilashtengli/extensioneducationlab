@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`z-20 w-full  bg-teal-200 lg:bg-opacity-90 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
+        className={`z-20 w-full  bg-teal-200 lg:bg-opacity-70 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
       >
         <div className="flex  items-center gap-x-4 md:gap-x-3 lg:gap-x-5">
           <Link to="/">
@@ -59,7 +59,7 @@ const Header = () => {
             </h1>
             <h1
               key={currentTagIndex}
-              className={`h-fit  border-red-500  w-fit tracking-wider ml-16 px-2 text-xl -mt-[2.15rem]  font-semibold animate-bottom-to-top`}
+              className={`h-fit  border-red-500  w-fit tracking-wider ml-16 px-2 text-xl -mt-[2.1rem]  font-semibold animate-bottom-to-top`}
             >
               {words[currentTagIndex]}
             </h1>
@@ -83,8 +83,8 @@ const Header = () => {
           <li className=" hover:text-green-500">
             <Link to="/">Home</Link>
           </li>
-          <li className=" hover:text-green-500">
-            <Link to="/publication">Publication</Link>
+          <li>
+            <Link to="/blog">Blog</Link>
           </li>
           <li className=" hover:text-green-500">
             <Link to="/bio">Bio</Link>
@@ -92,9 +92,9 @@ const Header = () => {
           <li className=" hover:text-green-500">
             <Link to="/research">Research</Link>
           </li>
-          {/* <li>
-            <Link to="/blog">Blog</Link>
-          </li> */}
+          <li className=" hover:text-green-500">
+            <Link to="/publication">Publication</Link>
+          </li>
 
           <li className=" hover:text-green-500">
             <Link to="/resource">Resource</Link>
@@ -133,20 +133,23 @@ const Header = () => {
       </div>
       {menuOpen && (
         <div
-          className={`h-screen fixed flex flex-col justify-between items-center z-10  border-red-500  lg:hidden right-0 left-0 bg-white  transition duration-500 ease-in-out transform translate-x-0`}
+          className={`h-screen w-screen fixed  flex flex-col justify-between items-center z-10  border-red-500  lg:hidden right-0 left-0 bg-white  transition duration-500 ease-in-out transform translate-x-0`}
         >
           <ul className=" animate-bottom-to-top border-black text-center text-4xl font-semibold mt-52">
             <li className="px-4 py-2">
               <Link to="/">Home</Link>
             </li>
             <li className="px-4 py-2">
-              <Link to="/publication">Publication</Link>
+              <Link to="/blog">Blog</Link>
             </li>
             <li className="px-4 py-2">
               <Link to="/bio">Bio</Link>
             </li>
             <li className="px-4 py-2">
               <Link to="/research">Research</Link>
+            </li>
+            <li className="px-4 py-2">
+              <Link to="/publication">Publication</Link>
             </li>
             <li className="px-4 py-2">
               <Link to="/resource">Resource</Link>
