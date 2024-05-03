@@ -1,14 +1,14 @@
 import mbtengli from "../../Images/mbTengli.jpg";
 import { Link } from "react-router-dom";
 import DelayedComponent from "../DelayedComponent/DelayedComponent";
-// import { bannerImages } from "../Utils/Constants";
+import { bannerImages } from "../Utils/Constants";
 import ImageSlider from "../Functionalities/ImageSlider";
 const LandingPageBody = () => {
   return (
     <>
       <div className="relative">
         <div className="">
-          {/* <ImageSlider images={bannerImages} interval={2000} /> */}
+          <ImageSlider images={bannerImages} interval={2000} />
         </div>
       </div>
       <div className="bg-teal-50 12 lg:pl-44 lg:pr-32 pt-5 px-1 lg:px-0 lg:pt-20">
