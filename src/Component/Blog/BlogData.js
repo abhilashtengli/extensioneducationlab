@@ -1,5 +1,5 @@
 import img from "../../Images/DairyTourismModel1.png";
-import Mm from "../../Images/MightyMillet.png";
+import Mm from "../../Images/MightyMillet.jpg";
 import Lca from "../../Images/LCA .png";
 import Ro from "../../Images/ResearchOnion.png";
 import Cge from "../../Images/CGE.png";
