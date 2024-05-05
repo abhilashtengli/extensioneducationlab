@@ -8,7 +8,7 @@ const BlogBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80">
+        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top"> Blog</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Uncover wisdom in every word.

@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`z-20 w-full  bg-teal-200  lg:bg-opacity-70 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
+        className={`z-20 w-full  bg-teal-200  bg-opacity-80 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
       >
         <div className="flex  items-center gap-x-4 md:gap-x-3 lg:gap-x-5">
           <Link to="/">

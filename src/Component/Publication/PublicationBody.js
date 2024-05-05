@@ -10,7 +10,7 @@ const PublicationBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80">
+        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">Research Articles</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Driving agricultural progress through insightful articles.
@@ -22,7 +22,7 @@ const PublicationBody = () => {
               Popular / Technical Articles
             </h1>
           </DelayedComponent>
-          <div className="py-5  border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
+          <div className="py-5 text-teal-800 border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
             {popularArticles.map((article) => (
               <DelayedComponent state="animate-bottom-to-top50 ">
                 <section
@@ -58,7 +58,7 @@ const PublicationBody = () => {
               Research Articles
             </h1>
           </DelayedComponent>
-          <div className="py-5  border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
+          <div className="py-5 text-teal-800 border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
             {articles.map((article) => (
               <DelayedComponent state="animate-bottom-to-top50 ">
                 <section
@@ -94,7 +94,7 @@ const PublicationBody = () => {
               Books & Chapter's
             </h1>
           </DelayedComponent>
-          <div className="py-5  border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
+          <div className="py-5 text-teal-800  border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
             {Books.map((book) => (
               <DelayedComponent state="animate-bottom-to-top50 ">
                 <section
@@ -107,7 +107,7 @@ const PublicationBody = () => {
                       className="w-80 rounded-tr-lg rounded-tl-lg h-52"
                       src={book?.imgUrl}
                     />
-                    <p className="text-gray-700">
+                    <p className="">
                       <b className="text-teal-900">{book.topic}</b>
                       {book.explanation}
                     </p>

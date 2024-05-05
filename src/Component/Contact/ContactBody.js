@@ -71,7 +71,7 @@ const ContactBody = () => {
   return (
     <>
       <div className="">
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80">
+        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">Contact</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Please use this form to contact me.
@@ -133,7 +133,7 @@ const ContactBody = () => {
                     <div className="mb-4">
                       <label
                         htmlFor="user_name"
-                        className="block font-medium mb-1 pl-1 animate-bottom-to-top"
+                        className="block font-medium mb-1 pl-1 text-teal-800 animate-bottom-to-top"
                       >
                         Name
                       </label>
@@ -153,7 +153,7 @@ const ContactBody = () => {
                     <div className="mb-4">
                       <label
                         htmlFor="user_email"
-                        className="block font-medium mb-1 pl-1 animate-bottom-to-top"
+                        className="block font-medium mb-1 pl-1 text-teal-800 animate-bottom-to-top"
                       >
                         Email Address
                       </label>
@@ -171,7 +171,7 @@ const ContactBody = () => {
                     <div className="mb-4">
                       <label
                         htmlFor="message"
-                        className="block font-medium mb-1 pl-1 animate-bottom-to-top"
+                        className="block font-medium mb-1 pl-1 text-teal-800 animate-bottom-to-top"
                       >
                         Message
                       </label>

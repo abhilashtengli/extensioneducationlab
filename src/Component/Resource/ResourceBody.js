@@ -9,7 +9,7 @@ const ResourceBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80">
+        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">Resource</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Resources are the fuel of progress
@@ -17,7 +17,7 @@ const ResourceBody = () => {
         </div>
 
         <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32 border-t border-teal-100">
-          <div className="py-5  border-black px-1 flex flex-wrap gap-x-10 gap-y-5 justify-center">
+          <div className="py-5 text-teal-800  border-black px-1 flex flex-wrap gap-x-10 gap-y-5 justify-center">
             {book.map((article) => (
               <DelayedComponent state="animate-bottom-to-top50 ">
                 <section
