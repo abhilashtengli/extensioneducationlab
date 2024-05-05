@@ -19,7 +19,7 @@ const PublicationBody = () => {
         <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32 border-t border-teal-100">
           <DelayedComponent state="animate-left-to-right">
             <h1 className="text-3xl text-teal-900 text-center font-semibold animate-bottom-to-top border border-teal-300 shadow-lg rounded-lg bg-white py-2">
-              Popular Articles
+              Popular / Technical Articles
             </h1>
           </DelayedComponent>
           <div className="py-5  border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">
@@ -55,7 +55,7 @@ const PublicationBody = () => {
         <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32 ">
           <DelayedComponent state="animate-left-to-right">
             <h1 className="text-3xl text-teal-900 text-center font-semibold animate-bottom-to-top border border-teal-300 shadow-lg rounded-lg bg-white py-2">
-              Articles
+              Research Articles
             </h1>
           </DelayedComponent>
           <div className="py-5  border-black px-1 flex flex-wrap gap-x-10 gap-y-8 justify-center">

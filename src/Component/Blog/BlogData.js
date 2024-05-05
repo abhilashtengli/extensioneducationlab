@@ -1,7 +1,7 @@
 import Mm from "../../Images/MightyMillet.jpg";
 import Lca from "../../Images/LCA .png";
 import Ro from "../../Images/ResearchOnion.png";
-import Cge from "../../Images/CGE.png";
+import Cge from "../../Images/CGE.jpg";
 import Fdh from "../../Images/FDH.jpg";
 import Ser from "../../Images/SER.jpg";
 export const BlogData = [
@@ -19,7 +19,7 @@ export const BlogData = [
   {
     title: "Mighty Millets ",
     explanation:
-      "A Millet Booklet for Children. College oif Post graduate Studies in Agricultural Sciences, CAU (Imphal) Umiam, Meghalaya, India",
+      "A Millet Booklet for Children. College of Post graduate Studies in Agricultural Sciences, CAU (Imphal) Umiam, Meghalaya, India",
     date: "02/04/2023",
     imgUrl: Mm,
     link: "https://cauimphal.online/files/IYM%20Millet%20Booklet%20CPGSAS%20Umiam%202023.pdf ",
