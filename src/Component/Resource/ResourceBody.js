@@ -31,7 +31,10 @@ const ResourceBody = () => {
                       src={article.imgUrl}
                     />
                     <p>
-                      <b className="text-teal-900">{article.title}</b> <br></br>
+                      <b className="text-teal-900 text-justify">
+                        {article.title}
+                      </b>{" "}
+                      <br></br>
                       {/* {article.explanation} */}
                     </p>
                   </div>

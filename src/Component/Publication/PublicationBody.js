@@ -36,7 +36,7 @@ const PublicationBody = () => {
                       className="w-80 rounded-tr-lg rounded-tl-lg h-52"
                       src={article.imgUrl}
                     />
-                    <p>
+                    <p className="text-justify">
                       <b className="text-teal-900">{article.topic}</b>
                       {article.explanation}
                     </p>
@@ -44,7 +44,7 @@ const PublicationBody = () => {
 
                   <div className="flex animate-bottom-to-top">
                     <p className="mt-0.5 mr-1 font-bold">-</p>
-                    <h2 className="text-xs mt-2 border-red-500 ">
+                    <h2 className="text-xs mt-2 border-red-500 text-justify">
                       {article.author}
                     </h2>
                   </div>
@@ -73,7 +73,7 @@ const PublicationBody = () => {
                       className="w-80 rounded-tr-lg rounded-tl-lg h-52"
                       src={article.imgUrl}
                     />
-                    <p>
+                    <p className="text-justify">
                       <b className="text-teal-900">{article.topic}</b>
                       {article.explanation}
                     </p>
@@ -81,7 +81,7 @@ const PublicationBody = () => {
 
                   <div className="flex ">
                     <p className="mt-0.5 mr-1 font-bold">-</p>
-                    <h2 className="text-xs mt-2 border-red-500 ">
+                    <h2 className="text-xs mt-2 border-red-500 text-justify">
                       {article.author}
                     </h2>
                   </div>
@@ -110,7 +110,7 @@ const PublicationBody = () => {
                       className="w-80 rounded-tr-lg rounded-tl-lg h-52"
                       src={book?.imgUrl}
                     />
-                    <p className="">
+                    <p className="text-justify">
                       <b className="text-teal-900">{book.topic}</b>
                       {book.explanation}
                     </p>
@@ -118,7 +118,7 @@ const PublicationBody = () => {
 
                   <div className="flex animate-bottom-to-top">
                     <p className="mt-0.5 mr-1 font-bold">-</p>
-                    <h2 className="text-xs mt-2 border-red-500 ">
+                    <h2 className="text-xs mt-2 border-red-500 text-justify">
                       {book.author}
                     </h2>
                   </div>
