@@ -34,11 +34,11 @@ const Header = () => {
       <div
         className={`z-20 w-full  bg-teal-200  bg-opacity-60 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
       >
-        <div className="flex  items-center gap-x-4 md:gap-x-3 lg:gap-x-5">
+        <div className="flex lg:pl-0 pl-2 items-center gap-x-4 md:gap-x-3 lg:gap-x-5">
           <Link to="/">
             <img
               alt="logo"
-              className="w-16 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]  border-red-500 md:w-16 animate-bottom-to-top rounded-full"
+              className="w-12  shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]  border-red-500 lg:w-16 animate-bottom-to-top rounded-full"
               src={eleLogo}
             />
           </Link>
