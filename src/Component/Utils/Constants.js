@@ -12,9 +12,12 @@ export const orcidUrl = "https://orcid.org/0000-0002-8664-3925 ";
 // export const bannerImages = [img1, img2, img3, img4, img5];
 
 export const bannerImages = [
-  { img: img1, occassion: "Seminar class" },
-  { img: img2, occassion: "Seminar class" },
-  { img: img3, occassion: "Seminar class" },
-  { img: img4, occassion: "Seminar class" },
-  { img: img5, occassion: "Seminar class" },
+  {
+    img: img1,
+    occassion: "Undergrad's entrepreneurial intention exploration.",
+  },
+  { img: img2, occassion: "Engagement with farmers in Tripura" },
+  { img: img3, occassion: "Engagement with school students" },
+  { img: img4, occassion: "Planning student research." },
+  { img: img5, occassion: "Student's research presentation" },
 ];

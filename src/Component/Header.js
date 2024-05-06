@@ -6,7 +6,7 @@ import researchgate from "../Images/ResearchGate.png";
 import { linkedinUrl } from "./Utils/Constants";
 import { researchgateUrl } from "./Utils/Constants";
 import { orcidUrl } from "./Utils/Constants";
-import eelLogoxl from "../Images/eelLogoxl.png";
+import eleLogo from "../Images/eleLogo.png";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -32,14 +32,14 @@ const Header = () => {
   return (
     <>
       <div
-        className={`z-20 w-full  bg-teal-200  bg-opacity-80 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
+        className={`z-20 w-full  bg-teal-200  bg-opacity-60 flex justify-between border-b border-teal-200 py-3 px-1 lg:px-10 items-center fixed`}
       >
         <div className="flex  items-center gap-x-4 md:gap-x-3 lg:gap-x-5">
           <Link to="/">
             <img
               alt="logo"
-              className="w-16  border-red-500 md:w-16 animate-bottom-to-top rounded-full"
-              src={eelLogoxl}
+              className="w-16 shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.7)]  border-red-500 md:w-16 animate-bottom-to-top rounded-full"
+              src={eleLogo}
             />
           </Link>
           <div className=" text-green-900 border-red-500  hidden md:block">

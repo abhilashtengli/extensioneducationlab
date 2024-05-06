@@ -8,17 +8,20 @@ const BlogBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
+        <div className=" flex flex-col justify-end pb-5 h-52 pl-6 lg:pl-44  border-red-500  text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top"> Blog</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Uncover wisdom in every word.
           </p>
         </div>
-        <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32 border-t mx-auto  flex flex-col justify-center items-center border-teal-100">
+        <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32  border-t mx-auto  flex flex-col justify-center items-center border-teal-100">
           {BlogData.map((blog) => (
             <div>
               <DelayedComponent state="animate-bottom-to-top50 ">
-                <div className="border hidden border-teal-200 lg:flex justify-center shadow-lg rounded-lg bg-white  my-5 gap-x-10 h-[23rem] p-5">
+                <div
+                  className="border hidden border-teal-200 lg:flex justify-center shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.3)]
+ rounded-lg bg-white  my-5 gap-x-10 h-[23rem] p-5"
+                >
                   <div
                     onClick={() => Navigate(blog.link)}
                     className=" border-red-500 w-80 h-80 cursor-pointer"
@@ -28,13 +31,17 @@ const BlogBody = () => {
                   <div className="w-96 text-teal-800">
                     <h1
                       onClick={() => Navigate(blog.link)}
-                      className="font-semibold text-xl cursor-pointer"
+                      className="font-semibold text-xl cursor-pointer text-justify"
                     >
                       {blog.title}
                     </h1>
-                    <p className=" my-3">{blog.explanation}</p>
+                    <p className="text-justify my-3">{blog.explanation}</p>
                     <ul>
-                      <li className=" my-3">Date : {blog.date}</li>
+                      {blog.date ? (
+                        <li className=" my-3">Date : {blog.date}</li>
+                      ) : (
+                        ""
+                      )}
                       <li className="text-xs text-end my-3">- {blog.author}</li>
                     </ul>
                   </div>

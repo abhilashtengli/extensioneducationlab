@@ -5,7 +5,7 @@ const BioBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
+        <div className=" flex flex-col justify-end pb-5 pl-6 lg:pl-44 border-red-500 h-52 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">About me</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Cultivating knowledge and community through extension education
@@ -13,7 +13,7 @@ const BioBody = () => {
         </div>
         <div className="bg-teal-50 py-12 lg:pl-44 lg:px-0 px-5 lg:pr-32 border-t text-teal-800 border-teal-100">
           <DelayedComponent state="animate-bottom-to-top">
-            <p className="  border-red-500 py-2 animate-bottom-to-top">
+            <p className="  border-red-500 py-2 text-justify animate-bottom-to-top">
               <b>Mahesh B. Tengli </b> holds the position of Assistant Professor
               of Agricultural Extension at the School of Social Sciences,
               College of Post Graduate Studies in Agricultural Sciences, CAU(I),
@@ -21,7 +21,7 @@ const BioBody = () => {
               University, Imphal in December 2019, Mahesh brings a wealth of
               academic experience to his role.
             </p>
-            <p className="  border-red-500 py-2 animate-bottom-to-top">
+            <p className="  border-red-500 py-2 text-justify animate-bottom-to-top">
               Mahesh completed his Bachelor’s degree in Agriculture at the
               College of Agriculture, University of Agricultural Sciences,
               Raichur, Karnataka, followed by his M.Sc. in Agricultural
@@ -31,7 +31,7 @@ const BioBody = () => {
               model for the trans-Gangetic plains of India, was a culmination of
               his academic journey.
             </p>
-            <p className=" border-red-500 py-2 animate-bottom-to-top">
+            <p className=" border-red-500 py-2 text-justify animate-bottom-to-top">
               Throughout his career, Mahesh aims to contributed significantly to
               the field of extension education through various research articles
               and blogs. His research interests lie in modeling human behavior
@@ -47,13 +47,13 @@ const BioBody = () => {
               <h1 className="text-3xl animate-bottom-to-top">Teaching</h1>
             </DelayedComponent>
             <DelayedComponent state="animate-bottom-to-top ">
-              <p className="mt-5 animate-bottom-to-top">
+              <p className="mt-5 text-justify animate-bottom-to-top">
                 Within the realm of academia, my expertise lies in instructing
                 advanced courses tailored for Masters and Doctoral students,
                 designed to equip them with the specialized skills and knowledge
                 essential for success in their respective fields.
               </p>
-              <p className="mt-5 animate-bottom-to-top">
+              <p className="mt-5 text-justify animate-bottom-to-top">
                 <b> Applied Behaviour Change:</b> One cornerstone of my teaching
                 portfolio is Applied Behavior Change, where I delve into the
                 intricacies of understanding and influencing human behavior to
@@ -63,7 +63,7 @@ const BioBody = () => {
                 equipping students with the tools necessary to design and
                 implement effective strategies in diverse settings.
               </p>
-              <p className="mt-5 animate-bottom-to-top">
+              <p className="mt-5 text-justify animate-bottom-to-top">
                 <b>Entrepreneurship Development & Business Communication:</b> In
                 these courses, I guide students through the multifaceted
                 landscape of entrepreneurship, imparting both theoretical
@@ -76,7 +76,7 @@ const BioBody = () => {
                 thereby empowering students to navigate the complexities of the
                 business world with confidence and proficiency.
               </p>
-              <p className="mt-5 animate-bottom-to-top">
+              <p className="mt-5 text-justify animate-bottom-to-top">
                 <b>Policy Engagement & Extension:</b> This course represents yet
                 another focal point of my teaching endeavors, wherein I
                 elucidate the processes and dynamics involved in policy
@@ -87,7 +87,7 @@ const BioBody = () => {
                 collaboration and knowledge exchange for the betterment of
                 society.
               </p>
-              <p className="mt-5 animate-bottom-to-top">
+              <p className="mt-5 text-justify animate-bottom-to-top">
                 <b>Research Methodology:</b> Additionally, I offer comprehensive
                 instruction in Research Methodology, equipping students with the
                 requisite skills and techniques for conducting rigorous and
@@ -97,7 +97,7 @@ const BioBody = () => {
                 instilling in them a solid foundation for academic inquiry and
                 scholarly pursuits.
               </p>
-              <p className="mt-5 animate-bottom-to-top">
+              <p className="mt-5 text-justify animate-bottom-to-top">
                 <b> Technical Writing and Communication Skills:</b> Technical
                 Writing and Communication Skills are areas of emphasis in my
                 teaching repertoire, recognizing the critical role of clear and

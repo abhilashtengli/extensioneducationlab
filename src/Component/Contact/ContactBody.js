@@ -71,7 +71,7 @@ const ContactBody = () => {
   return (
     <>
       <div className="">
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
+        <div className=" flex flex-col justify-end pb-5 pl-6 lg:pl-44 border-red-500 h-52 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">Contact</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Please use this form to contact me.
@@ -79,7 +79,7 @@ const ContactBody = () => {
         </div>
         <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32 border-t border-teal-100 flex justify-center items-center ">
           <DelayedComponent state="animate-bottom-to-top50 ">
-            <div className=" border w-80 lg:w-96 px-5 border-teal-600 bg-slate-100 lg:px-10 py-5 rounded-lg">
+            <div className=" border w-80 lg:w-96 px-5 border-teal-600 shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.4)] bg-slate-100 lg:px-10 py-5 rounded-lg">
               {show ? (
                 <h1
                   className={` ${
@@ -190,7 +190,7 @@ const ContactBody = () => {
                       <button
                         type="submit"
                         value="Send"
-                        className="bg-blue-500 font-semibold text-white px-4 py-2 rounded-md disabled:opacity-50 animate-bottom-to-top"
+                        className="disabled:opacity-50 animate-bottom-to-top  px-4 py-1 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-transparent hover:border-teal-500  border-2  border-teal-600 "
                         disabled={isSubmitting}
                       >
                         Submit

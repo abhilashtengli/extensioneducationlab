@@ -11,9 +11,8 @@ const ImageScroller = ({ images }) => {
     infinite: true,
     speed: 3000, // Adjust this value for slide transition speed
     slidesToShow: 2,
-    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 50, // Set autoplaySpeed to 0 for continuous scrolling
+    autoplaySpeed: 0, // Set autoplaySpeed to 0 for continuous scrolling
     cssEase: "linear", // Set cssEase to linear for smooth continuous scrolling
     pauseOnHover: false,
     initialSlide: 0,
@@ -49,7 +48,10 @@ const ImageScroller = ({ images }) => {
           <Slider {...settings}>
             {images.map((image, index) => (
               <div className="lg:px-5 px-2 py-2  border-black" key={index}>
-                <div className="p-2 rounded-lg bg-teal-50 border w-fit border-teal-300  duration-500">
+                <div
+                  className="p-2 rounded-lg shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.2)]
+ bg-teal-50 border w-fit border-teal-300  duration-500"
+                >
                   <img
                     className=" h-72 lg:w-[26.5rem] w-[20rem] rounded-tl-lg rounded-tr-lg"
                     src={image.img}

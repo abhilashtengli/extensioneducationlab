@@ -9,7 +9,7 @@ const ResourceBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-16 pl-6 lg:pl-44 border-red-500 h-80 text-teal-800">
+        <div className=" flex flex-col justify-end pb-5 pl-6 lg:pl-44 border-red-500 h-52 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">Resource</h1>
           <p className="text-xl mt-4 animate-bottom-to-top">
             Resources are the fuel of progress
@@ -22,7 +22,7 @@ const ResourceBody = () => {
               <DelayedComponent state="animate-bottom-to-top50 ">
                 <section
                   onClick={() => navigatingto(article?.link)}
-                  className="border flex  shadow-xl flex-col cursor-pointer justify-between h-[33rem] bg-teal-50 border-gray-300 rounded-lg p-2 w-80"
+                  className="border flex  flex-col shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.4)] cursor-pointer justify-between h-[33rem] bg-teal-50 border-gray-300 rounded-lg p-2 w-80"
                 >
                   <div>
                     <img

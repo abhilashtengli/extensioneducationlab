@@ -10,7 +10,7 @@ export const BlogData = [
       "Catalysing grassroot entrepreneurship through satellite incubation centres in India ",
     explanation:
       "Good Practice Notes 6. APIRAS-APAARI. The TAP-AIS project, FAO. 1-14.",
-    date: "02/05/2024",
+    date: "",
     imgUrl: Cge,
     link: "https://openknowledge.fao.org/server/api/core/bitstreams/74b9156e-f5f9-4a5f-87c4-8096671a7585/content",
     author:
