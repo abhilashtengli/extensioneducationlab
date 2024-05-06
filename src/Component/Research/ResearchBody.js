@@ -5,13 +5,13 @@ const ResearchBody = () => {
   return (
     <>
       <div>
-        <div className=" flex flex-col justify-end pb-5 pl-6 lg:pl-44  border-red-500 text-teal-800 h-52">
+        <div className=" flex flex-col justify-end lg:pb-5 pb-1 pl-6 lg:pl-44  border-red-500 text-teal-800 h-52">
           <h1 className="text-4xl animate-bottom-to-top">Research </h1>
-          <p className="text-xl mt-4 animate-bottom-to-top">
+          <p className="text-xl lg:mt-4 mt-1 animate-bottom-to-top">
             Bringing research to life through agricultural extension.
           </p>
         </div>
-        <div className="bg-teal-50 py-12 lg:px-0 px-5 lg:pl-44 lg:pr-32 border border-red-500  text-teal-800">
+        <div className="bg-teal-50 py-12 lg:px-0 px-5 lg:pl-44 lg:pr-32  border-red-500  text-teal-800">
           <div>
             <DelayedComponent state="animate-bottom-to-top ">
               <p className="py-2 text-justify ">
@@ -61,9 +61,7 @@ const ResearchBody = () => {
             </DelayedComponent>
           </div>
           <div>
-            <section>
-              
-            </section>
+            <section></section>
           </div>
         </div>
       </div>

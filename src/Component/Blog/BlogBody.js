@@ -10,7 +10,7 @@ const BlogBody = () => {
       <div>
         <div className=" flex flex-col justify-end pb-5 h-52 pl-6 lg:pl-44  border-red-500  text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top"> Blog</h1>
-          <p className="text-xl mt-4 animate-bottom-to-top">
+          <p className="text-xl lg:mt-4 mt-1 animate-bottom-to-top">
             Uncover wisdom in every word.
           </p>
         </div>

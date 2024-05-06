@@ -11,7 +11,7 @@ const ResourceBody = () => {
       <div>
         <div className=" flex flex-col justify-end pb-5 pl-6 lg:pl-44 border-red-500 h-52 text-teal-800">
           <h1 className="text-4xl animate-bottom-to-top">Resource</h1>
-          <p className="text-xl mt-4 animate-bottom-to-top">
+          <p className="text-xl lg:mt-4 mt-1 animate-bottom-to-top">
             Resources are the fuel of progress
           </p>
         </div>

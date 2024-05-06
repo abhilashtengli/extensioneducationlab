@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import linkedin from "../Images/linkedin.webp";
+import linkedin from "../Images/LinkedIn.png";
 import orcid from "../Images/ORCID.png";
 import researchgate from "../Images/ResearchGate.png";
 import { linkedinUrl } from "./Utils/Constants";
@@ -38,7 +38,7 @@ const Header = () => {
           <Link to="/">
             <img
               alt="logo"
-              className="w-16 shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.7)]  border-red-500 md:w-16 animate-bottom-to-top rounded-full"
+              className="w-16 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]  border-red-500 md:w-16 animate-bottom-to-top rounded-full"
               src={eleLogo}
             />
           </Link>
@@ -105,7 +105,7 @@ const Header = () => {
           <li>
             <Link to={linkedinUrl}>
               <img
-                className="w-10  border-black"
+                className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]"
                 alt="linkedin"
                 src={linkedin}
               />
@@ -114,7 +114,7 @@ const Header = () => {
           <li>
             <Link to={orcidUrl}>
               <img
-                className="w-8  border-black mr-0.5"
+                className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] mr-0.5"
                 alt="orcid"
                 src={orcid}
               />
@@ -123,7 +123,7 @@ const Header = () => {
           <li>
             <Link to={researchgateUrl}>
               <img
-                className="w-8  border-black"
+                className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]"
                 alt="researchgate"
                 src={researchgate}
               />
@@ -163,7 +163,7 @@ const Header = () => {
             <li>
               <Link to={linkedinUrl}>
                 <img
-                  className="w-10  border-black"
+                  className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] border-black"
                   alt="linkedin"
                   src={linkedin}
                 />
@@ -172,7 +172,7 @@ const Header = () => {
             <li>
               <Link to={orcidUrl}>
                 <img
-                  className="w-8  border-black mr-0.5"
+                  className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] border-black mr-0.5"
                   alt="orcid"
                   src={orcid}
                 />
@@ -181,7 +181,7 @@ const Header = () => {
             <li>
               <Link to={researchgateUrl}>
                 <img
-                  className="w-8  border-black"
+                  className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] border-black"
                   alt="researchgate"
                   src={researchgate}
                 />
