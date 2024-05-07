@@ -47,7 +47,7 @@ const ImageScroller = ({ images }) => {
         <div className="mb-1 mt-8 ">
           <Slider {...settings}>
             {images.map((image, index) => (
-              <div className="lg:px-5 px-2 py-2  border-black" key={index}>
+              <div className="lg:px-5 px-2 py-2 border-black" key={index}>
                 <div
                   className="p-2 rounded-lg shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.2)]
  bg-teal-50 border w-fit border-teal-300  duration-500"

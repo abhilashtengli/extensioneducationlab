@@ -14,7 +14,7 @@ export const orcidUrl = "https://orcid.org/0000-0002-8664-3925 ";
 export const bannerImages = [
   {
     img: img1,
-    occassion: "Undergrad's entrepreneurial intention exploration.",
+    occassion: "Undergrad's entrepreneurial exploration.",
   },
   { img: img2, occassion: "Engagement with farmers in Tripura" },
   { img: img3, occassion: "Engagement with school students" },

@@ -1,6 +1,6 @@
 import React from "react";
 import DelayedComponent from "../DelayedComponent/DelayedComponent";
-
+import { ResearchScholars } from "./ResearchData";
 const ResearchBody = () => {
   return (
     <>
@@ -11,8 +11,8 @@ const ResearchBody = () => {
             Bringing research to life through agricultural extension.
           </p>
         </div>
-        <div className="bg-teal-50 py-12 lg:px-0 px-5 lg:pl-44 lg:pr-32  border-t border-teal-100  text-teal-800">
-          <div>
+        <div className="bg-teal-50 py-12  lg:px-0 px-5 lg:pl-44 lg:pr-32   border-t border-teal-100 text-teal-800">
+          <div className="">
             <DelayedComponent state="animate-bottom-to-top ">
               <p className="py-2 text-justify ">
                 Dr. Tengli’s extension research pursuits, he delves into a
@@ -60,8 +60,53 @@ const ResearchBody = () => {
               </p>
             </DelayedComponent>
           </div>
-          <div>
-            <section></section>
+          <div className=" border-black lg:mt-12 mt-5">
+            <DelayedComponent state="animate-bottom-to-top ">
+              <h1 className="text-3xl text-teal-900 text-center font-semibold animate-bottom-to-top border border-teal-300 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-sm bg-white py-2">
+                Research Scholar's
+              </h1>
+            </DelayedComponent>
+            {ResearchScholars.map((scholar) => (
+              <DelayedComponent state="animate-bottom-to-top ">
+                <section className="lg:flex  justify-between lg:my-5 my-6 lg:py-1 py-3 px-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border border-teal-200 rounded-sm bg-white">
+                  <div className="flex pt-1">
+                    <div className="border-red-500 lg:h-fit  lg:mt-0  p-2 lg:p-4  w-[30%] lg:w-[15%]">
+                      <img
+                        alt=""
+                        className="w-fit border border-gray-400 rounded-sm"
+                        src={scholar.imgUrl}
+                      />
+                    </div>
+                    <div className="border-red-500 w-[70%] lg:w-[85%] lg:px-5 pr-1   lg:py-2">
+                      <h1 className="font-semibold flex">
+                        <b className="font-semibold text-justify">Name :</b>
+                        <h2 className="uppercase ml-1">{scholar.name}</h2>
+                      </h1>
+                      <h1>
+                        <b className="font-semibold">Degree :</b>{" "}
+                        {scholar.degree}
+                      </h1>
+                      <p className="">
+                        <b className="font-semibold text-justify">
+                          Research interest :
+                        </b>
+                        {scholar.ResearchInterest}
+                      </p>
+                      <div className="text-justify mt-1 lg:block hidden">
+                        {scholar.About.map((a) => (
+                          <p>• {a}</p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-justify lg:hidden px-2.5">
+                    {scholar.About.map((a) => (
+                      <p>• {a}</p>
+                    ))}
+                  </div>
+                </section>
+              </DelayedComponent>
+            ))}
           </div>
         </div>
       </div>

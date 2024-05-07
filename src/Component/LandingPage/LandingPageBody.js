@@ -14,11 +14,11 @@ const LandingPageBody = () => {
                 Welcome to the Extension Education Lab (eLe)
               </b>{" "}
               , your virtual gateway to the world of extension education. At
-              eeL, we provide a dynamic platform tailored for extension students
+              eLe, we provide a dynamic platform tailored for extension students
               and researchers, offering comprehensive resources to delve into
               the realms of extension education courses and research. Whether
               you're embarking on your academic journey or delving into
-              groundbreaking research endeavors, eeL is your compass, guiding
+              groundbreaking research endeavors, eLe is your compass, guiding
               you through the intricate landscape of extension education with
               expertise and innovation. Join us in unlocking the boundless
               opportunities that await in the vibrant domain of extension

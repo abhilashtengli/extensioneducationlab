@@ -11,8 +11,7 @@ const Research = () => {
     <>
       <Header />
       <ResearchBody />
-      <Footer/>
-
+      <Footer />
     </>
   );
 };
