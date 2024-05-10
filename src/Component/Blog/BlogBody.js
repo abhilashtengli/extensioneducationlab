@@ -1,6 +1,7 @@
 import React from "react";
 import { BlogData } from "./BlogData";
 import DelayedComponent from "../DelayedComponent/DelayedComponent";
+
 const BlogBody = () => {
   const Navigate = (link) => {
     window.open(link);

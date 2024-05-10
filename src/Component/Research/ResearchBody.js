@@ -79,13 +79,9 @@ const ResearchBody = () => {
                     </div>
                     <div className="border-red-500 w-[70%] lg:w-[85%] lg:px-5 pr-1   lg:py-2">
                       <h1 className="font-semibold flex">
-                        <b className="font-semibold text-justify">Name :</b>
-                        <h2 className="uppercase ml-1">{scholar.name}</h2>
+                        <h2 className="uppercase ">{scholar.name}</h2>
                       </h1>
-                      <h1>
-                        <b className="font-semibold">Degree :</b>{" "}
-                        {scholar.degree}
-                      </h1>
+                      <h1 className="font-semibold">{scholar.degree}</h1>
                       <p className="">
                         <b className="font-semibold text-justify">
                           Research interest :

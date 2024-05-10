@@ -190,7 +190,7 @@ const ContactBody = () => {
                       <button
                         type="submit"
                         value="Send"
-                        className="disabled:opacity-50 animate-bottom-to-top  px-4 py-1 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-transparent hover:border-teal-500  border-2  border-teal-600 "
+                        className="disabled:opacity-50 animate-bottom-to-top  px-4 py-1 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-teal-800 border-transparent hover:border-teal-500  border-2  border-teal-600 "
                         disabled={isSubmitting}
                       >
                         Submit

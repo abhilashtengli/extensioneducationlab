@@ -50,7 +50,7 @@ export const ResearchScholars = [
     imgUrl: shubham,
   },
   {
-    name: "Santosh Kumar ",
+    name: "Santosh Kumar Sahoo",
     degree: "M. Sc. (Agri.) Agricultural Extension",
     ResearchInterest: " Agro-Eco-Tourism",
     About: [
@@ -61,7 +61,7 @@ export const ResearchScholars = [
     imgUrl: santosh,
   },
   {
-    name: "Suraj Singh",
+    name: "Maibam Suraj Singh",
     degree: "Ph. D Scholar (Agricultural Extension)",
     ResearchInterest:
       " Entrepreneurship, Entrepreneurial Ecosystem, Climate Change, Social Ecology  ",

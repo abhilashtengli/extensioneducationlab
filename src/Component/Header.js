@@ -10,7 +10,7 @@ import eleLogo from "../Images/eleLogo.png";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-
+import { motion } from "framer-motion";
 const Header = () => {
   const [currentTagIndex, setCurrentTagIndex] = useState(0);
   const words = ["Engage", "Learn", "Evolve"];
@@ -25,8 +25,20 @@ const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const variants = {
+    initial: {
+      y: -400,
+      scale: 0.1,
+    },
+    animate: {
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 60,
+        damping: 11,
+      },
+    },
   };
 
   return (
@@ -42,7 +54,12 @@ const Header = () => {
               src={eleLogo}
             />
           </Link>
-          <div className=" text-green-900 border-red-500  hidden md:block">
+          <motion.div
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            className=" text-green-900 border-red-500  hidden md:block"
+          >
             <h1 className=" tracking-wider animate-bottom-to-top text-lg font-semibold  pl-2  bg-opacity-30 rounded-sm p-1">
               ELe to
             </h1>
@@ -52,8 +69,13 @@ const Header = () => {
             >
               {words[currentTagIndex]}
             </h1>
-          </div>
-          <div className=" text-green-900 border-red-500  block md:hidden w-[10.5rem] -ml-3  ">
+          </motion.div>
+          <motion.div
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            className=" text-green-900 border-red-500  block md:hidden w-[10.5rem] -ml-3  "
+          >
             <h1 className=" tracking-wider animate-bottom-to-top text-lg font-semibold  pl-2 bg-opacity-30 rounded-lg p-1">
               ELe to
             </h1>
@@ -63,22 +85,14 @@ const Header = () => {
             >
               {words[currentTagIndex]}
             </h1>
-          </div>
+          </motion.div>
         </div>
 
-        {!menuOpen ? (
-          <FontAwesomeIcon
-            className=" lg:hidden w-5 h-8 text-black mr-3"
-            icon={faBars}
-            onClick={toggleMenu}
-          />
-        ) : (
-          <FontAwesomeIcon
-            className=" lg:hidden w-5 h-8 text-black mr-3"
-            icon={faXmark}
-            onClick={toggleMenu}
-          />
-        )}
+        <FontAwesomeIcon
+          className="lg:hidden w-5 h-8 text-black mr-3"
+          icon={menuOpen ? faXmark : faBars}
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
         <ul className=" hidden font-semibold md:hidden lg:flex xl:flex justify-between  items-center text-xl animate-bottom-to-top gap-x-5  text-green-900 ">
           <li className=" hover:text-green-500">
             <Link to="/">Home</Link>
@@ -159,7 +173,7 @@ const Header = () => {
             </li>
           </ul>
 
-          <ul className="flex mb-20 justify-between  items-center text-xl animate-left-to-right gap-x-10 ">
+          <ul className="flex mb-20 justify-between animate-left-to-right  items-center text-xl gap-x-10 ">
             <li>
               <Link to={linkedinUrl}>
                 <img
