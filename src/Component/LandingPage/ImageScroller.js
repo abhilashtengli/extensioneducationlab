@@ -12,7 +12,7 @@ const ImageScroller = ({ images }) => {
     speed: 3000, // Adjust this value for slide transition speed
     slidesToShow: 2,
     autoplay: true,
-    autoplaySpeed: 0, // Set autoplaySpeed to 0 for continuous scrolling
+    autoplaySpeed: 10, // Set autoplaySpeed to 0 for continuous scrolling
     cssEase: "linear", // Set cssEase to linear for smooth continuous scrolling
     pauseOnHover: false,
     initialSlide: 0,

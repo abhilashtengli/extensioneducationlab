@@ -1,6 +1,8 @@
 import React from "react";
 import DelayedComponent from "../DelayedComponent/DelayedComponent";
 import { ResearchScholars } from "./ResearchData";
+import Accordion from "../Utils/Accordion";
+
 const ResearchBody = () => {
   return (
     <>
@@ -11,10 +13,10 @@ const ResearchBody = () => {
             Bringing research to life through agricultural extension.
           </p>
         </div>
-        <div className="bg-teal-50 py-12  lg:px-0 px-5 lg:pl-44 lg:pr-32   border-t border-teal-100 text-teal-800">
-          <div className="">
+        <div className="bg-teal-50  py-12 lg:flex lg:px-10 px-5 justify-between   border-black text-teal-800">
+          <div className=" border-red-500 lg:w-[70%]  lg:px-20">
             <DelayedComponent state="animate-bottom-to-top ">
-              <p className="py-2 text-justify ">
+              <p className="pb-2 text-justify  ">
                 Dr. Tengli’s extension research pursuits, he delves into a
                 diverse array of fields, reflecting his passion for
                 interdisciplinary investigations. His primary research interests
@@ -28,7 +30,7 @@ const ResearchBody = () => {
                 where innovation and enterprise play pivotal roles in driving
                 sustainable development.{" "}
               </p>
-              <p className="py-2 text-justify">
+              <p className="py-2 text-justify ">
                 In his investigations, Dr. Tengli employ sophisticated behavior
                 modelling techniques to elucidate the decision-making processes
                 of entrepreneurs and identify factors that influence their
@@ -42,13 +44,13 @@ const ResearchBody = () => {
                 agricultural landscapes to foster tourism while promoting
                 environmental sustainability and community development.
               </p>
-              <p className="py-2 text-justify">
+              <p className="py-2 text-justify ">
                 Dr. Tengli have been involved in collaborative projects like the
                 "Rainbow Diet" campaign with ICAR-CTCRI in Tripura and a Millet
                 promotion initiative with ICAR-IIMR Hyderabad in Tripura and
                 Meghalaya.{" "}
               </p>
-              <p className="py-2 text-justify">
+              <p className="py-2 text-justify ">
                 Currently, Dr. Tengli’s academic endeavors are multifaceted,
                 encompassing investigations into the concerns of kiwi growers in
                 Arunachal Pradesh, the entrepreneurial aspirations of students
@@ -60,7 +62,42 @@ const ResearchBody = () => {
               </p>
             </DelayedComponent>
           </div>
-          <div className=" border-black lg:mt-12 mt-5">
+          <div className="flex flex-col lg:w-[30%]  gap-y-5">
+            <h1 className="text-lg text-teal-900 text-center font-semibold animate-bottom-to-top border border-teal-100 shadow-[rgba(0,_0,_0,_0.1)_0px_2px_5px] rounded-sm bg-white py-2">
+              Scholar Sphere
+            </h1>
+            {ResearchScholars.map((scholar) => (
+              <DelayedComponent state="animate-bottom-to-top ">
+                <div className="border h-fit bg-white pb-5  shadow-[rgba(0,_0,_0,0.1)_0px_2px_5px] rounded-sm border-teal-100 ">
+                  <div className=" flex justify-between items-start px-2 py-2">
+                    <div className="w-[30%] p-3 ">
+                      <img
+                        alt=""
+                        className=" border border-gray-400 rounded-sm"
+                        src={scholar.imgUrl}
+                      />
+                    </div>
+                    <div className="w-[70%] mt-1.5">
+                      <h1 className="uppercase font-semibold">
+                        {scholar.name}
+                      </h1>
+                      <h1 className="font-semibold">{scholar.degree}</h1>
+                      <p className="justify-center">
+                        <b className="font-semibold text-justify">
+                          Research interest :
+                        </b>
+                        {scholar.ResearchInterest}
+                      </p>
+                    </div>
+                  </div>
+                  <div className=" border-red-500 px-5">
+                    <Accordion title={"Research Aim"} answer={scholar.About} />
+                  </div>
+                </div>
+              </DelayedComponent>
+            ))}
+          </div>
+          {/* <div className=" border-black lg:mt-12 lg:hidden mt-5">
             <DelayedComponent state="animate-bottom-to-top ">
               <h1 className="text-3xl text-teal-900 text-center font-semibold animate-bottom-to-top border border-teal-300 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-sm bg-white py-2">
                 Research Scholar's
@@ -103,7 +140,7 @@ const ResearchBody = () => {
                 </section>
               </DelayedComponent>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

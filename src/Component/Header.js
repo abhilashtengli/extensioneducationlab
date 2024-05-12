@@ -94,29 +94,68 @@ const Header = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul className=" hidden font-semibold md:hidden lg:flex xl:flex justify-between  items-center text-xl animate-bottom-to-top gap-x-5  text-green-900 ">
-          <li className=" hover:text-green-500">
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className=" hover:text-green-500"
+          >
             <Link to="/">Home</Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className="hover:text-green-500"
+          >
             <Link to="/blog">Blog</Link>
-          </li>
-          <li className=" hover:text-green-500">
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className=" hover:text-green-500"
+          >
             <Link to="/bio">Bio</Link>
-          </li>
-          <li className=" hover:text-green-500">
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className=" hover:text-green-500"
+          >
             <Link to="/research">Research</Link>
-          </li>
-          <li className=" hover:text-green-500">
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className=" hover:text-green-500"
+          >
             <Link to="/publication">Publication</Link>
-          </li>
+          </motion.li>
 
-          <li className=" hover:text-green-500">
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className=" hover:text-green-500"
+          >
             <Link to="/resource">Resource</Link>
-          </li>
-          <li className=" hover:text-green-500">
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+            className=" hover:text-green-500"
+          >
             <Link to="/contact">Contact</Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+          >
             <Link to={linkedinUrl}>
               <img
                 className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]"
@@ -124,8 +163,12 @@ const Header = () => {
                 src={linkedin}
               />
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+          >
             <Link to={orcidUrl}>
               <img
                 className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] mr-0.5"
@@ -133,8 +176,12 @@ const Header = () => {
                 src={orcid}
               />
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileTap={{
+              scale: 0.8,
+            }}
+          >
             <Link to={researchgateUrl}>
               <img
                 className="w-8 rounded-full shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]"
@@ -142,7 +189,7 @@ const Header = () => {
                 src={researchgate}
               />
             </Link>
-          </li>
+          </motion.li>
         </ul>
       </div>
       {menuOpen && (

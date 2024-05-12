@@ -4,6 +4,8 @@ import DelayedComponent from "../DelayedComponent/DelayedComponent";
 import { bannerImages } from "../Utils/Constants";
 import ImageScroller from "./ImageScroller";
 import { motion } from "framer-motion";
+import Scroll from "./Scroll";
+
 const LandingPageBody = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const LandingPageBody = () => {
           >
             <b className="text-lg">
               Welcome to the Extension Education Lab (eLe)
-            </b>{" "}
+            </b>
             , your virtual gateway to the world of extension education. At eLe,
             we provide a dynamic platform tailored for extension students and
             researchers, offering comprehensive resources to delve into the
