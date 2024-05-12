@@ -4,7 +4,6 @@ import DelayedComponent from "../DelayedComponent/DelayedComponent";
 import { bannerImages } from "../Utils/Constants";
 import ImageScroller from "./ImageScroller";
 import { motion } from "framer-motion";
-import Scroll from "./Scroll";
 
 const LandingPageBody = () => {
   return (
