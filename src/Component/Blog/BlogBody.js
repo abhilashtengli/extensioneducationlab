@@ -15,14 +15,11 @@ const BlogBody = () => {
             Uncover wisdom in every word.
           </p>
         </div>
-        <div className="bg-teal-50 py-12 lg:pl-44 lg:pr-32  border-t mx-auto  flex flex-col justify-center items-center border-teal-100">
+        <div className="bg-teal-50 py-12  border-teal-100 border-t  grid grid-cols-1 lg:grid-cols-2 gap-5 lg:px-10  justify-center items-center ">
           {BlogData.map((blog) => (
             <div>
               <DelayedComponent state="animate-bottom-to-top50 ">
-                <div
-                  className="border hidden border-teal-200 lg:flex justify-center shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.3)]
- rounded-lg bg-white  my-5 gap-x-10 h-[23rem] p-5"
-                >
+                <div className="border hidden border-teal-200 lg:flex justify-between shadow-[0_20px_50px_hsl(180,_55%,_75%,_0.3)] rounded-lg bg-white  my-5 gap-x-10 h-[23rem] p-5">
                   <div
                     onClick={() => Navigate(blog.link)}
                     className=" border-red-500 w-80 h-80 cursor-pointer"

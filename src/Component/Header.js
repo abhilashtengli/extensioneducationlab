@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import linkedin from "../Images/LinkedIn.png";
 import orcid from "../Images/ORCID.png";
 import researchgate from "../Images/ResearchGate.png";
@@ -14,6 +14,8 @@ import { motion } from "framer-motion";
 const Header = () => {
   const [currentTagIndex, setCurrentTagIndex] = useState(0);
   const words = ["Engage", "Learn", "Evolve"];
+  const location = useLocation();
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTagIndex((prevIndex) => (prevIndex + 1) % words.length);
@@ -40,7 +42,12 @@ const Header = () => {
       },
     },
   };
-
+  const handleMenuClick = (path) => {
+    if (location.pathname === path) {
+      // window.location.reload();
+      setMenuOpen(false);
+    }
+  };
   return (
     <>
       <div
@@ -194,33 +201,45 @@ const Header = () => {
       </div>
       {menuOpen && (
         <div
-          className={`h-screen w-screen fixed  flex flex-col justify-between items-center z-10  border-red-500  lg:hidden right-0 left-0 bg-white  transition duration-500 ease-in-out transform translate-x-0`}
+          className={`h-screen w-screen fixed  flex flex-col items-center justify-center gap-y-20 z-10  border-red-500  lg:hidden right-0 left-0 bg-white  transition duration-500 ease-in-out transform translate-x-0`}
         >
-          <ul className=" animate-bottom-to-top border-black text-center text-4xl font-semibold mt-52">
-            <li className="px-4 py-2">
+          <ul className=" animate-bottom-to-top border-black text-center text-2xl font-semibold mt-36">
+            <li className="px-4 py-2" onClick={() => handleMenuClick("/")}>
               <Link to="/">Home</Link>
             </li>
-            <li className="px-4 py-2">
+            <li className="px-4 py-2" onClick={() => handleMenuClick("/blog")}>
               <Link to="/blog">Blog</Link>
             </li>
-            <li className="px-4 py-2">
+            <li className="px-4 py-2" onClick={() => handleMenuClick("/bio")}>
               <Link to="/bio">Bio</Link>
             </li>
-            <li className="px-4 py-2">
+            <li
+              className="px-4 py-2"
+              onClick={() => handleMenuClick("/research")}
+            >
               <Link to="/research">Research</Link>
             </li>
-            <li className="px-4 py-2">
+            <li
+              className="px-4 py-2"
+              onClick={() => handleMenuClick("/publication")}
+            >
               <Link to="/publication">Publication</Link>
             </li>
-            <li className="px-4 py-2">
+            <li
+              className="px-4 py-2"
+              onClick={() => handleMenuClick("/resource")}
+            >
               <Link to="/resource">Resource</Link>
             </li>
-            <li className="px-4 py-2">
+            <li
+              className="px-4 py-2"
+              onClick={() => handleMenuClick("/contact")}
+            >
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
 
-          <ul className="flex mb-20 justify-between animate-left-to-right  items-center text-xl gap-x-10 ">
+          <ul className="flex mb-20 justify-between  animate-left-to-right  items-center text-xl gap-x-10 ">
             <li>
               <Link to={linkedinUrl}>
                 <img
